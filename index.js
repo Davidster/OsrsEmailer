@@ -7,11 +7,11 @@ const GMAIL_AUTH_INFO = {
     user: "concordiacourseplanner@gmail.com",
     pass: "tranzone"
 };
-const FROM_ADDRESS = "'Mr. odroid sir' <concordiacourseplanner@gmail.com>";
 const MAILING_LIST = [
     "davidhuculak5@gmail.com",
     "petergranitski@gmail.com"
 ];
+const FROM_ADDRESS = "'Mr. odroid sir' <concordiacourseplanner@gmail.com>";
 const SUBJECT_HEADING = "OSRS GE Price Update";
 const TIME_OFFSET_HOURS = -4;
 
@@ -24,13 +24,13 @@ osrs.ge.getItems([ITEM_NAME]).then((item) => {
     nodemailer.createTransport({
         host: SMTP_HOST,
         port: 465,
-        secure: true, // secure:true for port 465, secure:false for port 587
+        secure: true,
         auth: GMAIL_AUTH_INFO
     }).sendMail({
-        from: FROM_ADDRESS, // sender address
+        from: FROM_ADDRESS,
         to: MAILING_LIST.join(", "),
-        subject: SUBJECT_HEADING, // Subject line
-        html: message, // html body
+        subject: SUBJECT_HEADING,
+        html: message,
         date: new Date(new Date().getTime() + 1000 * 60 * 60 * TIME_OFFSET_HOURS)
     }, (err, info) => {
         if (err) {
