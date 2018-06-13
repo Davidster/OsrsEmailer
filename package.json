@@ -9,6 +9,7 @@
   "author": "David Huculak",
   "license": "ISC",
   "dependencies": {
+    "nodemailer": "^4.6.6",
     "osrs-wrapper": "^1.0.4"
   }
 }
