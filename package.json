@@ -1,0 +1,14 @@
+{
+  "name": "osrsemailer",
+  "version": "1.0.0",
+  "description": "Email service which provides the current traded price of a given OSRS item\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C ()\u001b[DGE\u001b[C\u001b[D) of a given OSRS item",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Huculak",
+  "license": "ISC",
+  "dependencies": {
+    "osrs-wrapper": "^1.0.4"
+  }
+}
