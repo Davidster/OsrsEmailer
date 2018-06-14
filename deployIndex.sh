@@ -1,0 +1,1 @@
+scp index.js david@conucourseplanner.online:/home/david/Programming/OsrsEmailer/
