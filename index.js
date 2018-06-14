@@ -9,7 +9,7 @@ const GMAIL_AUTH_INFO = {
     pass: "tranzone"
 };
 const MAILING_LIST = [
-	"davidhuculak5@gmail.com",
+    "davidhuculak5@gmail.com",
     "petergranitski@gmail.com"
 ];
 const FROM_ADDRESS = "'OSRS mailer' <concordiacourseplanner@gmail.com>";
@@ -22,13 +22,13 @@ const SELL_PRICE_HARD_LEATHER = 100;
 OSRS.ge.getItems([ITEM_NAME]).then((item) => {
     let price = JSON.parse(item).item.current.price;
     let message = `The current price of ${ITEM_NAME} is ${price}`;
-	let subjectHeader = `[OSRS GE] ${ITEM_NAME} Price Update`;
+    let subjectHeader = `[OSRS GE] ${ITEM_NAME} Price Update`;
 
-	if (price === SELL_PRICE_HARD_LEATHER) {
-		message += newLine;
-		message += `Looks like a good time to sell your ${ITEM_NAME}`;
-		subjectHeader += " - TIME TO SELL!";
-	}
+    if (price >= SELL_PRICE_HARD_LEATHER) {
+        message += newLine;
+        message += `Looks like a good time to sell your ${ITEM_NAME}`;
+        subjectHeader += " - TIME TO SELL!";
+    }
 
     nodeMailer.createTransport({
         host: SMTP_HOST,
