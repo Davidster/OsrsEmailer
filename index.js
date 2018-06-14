@@ -11,7 +11,7 @@ const MAILING_LIST = [
     "davidhuculak5@gmail.com",
     "petergranitski@gmail.com"
 ];
-const FROM_ADDRESS = "'Mr. odroid sir' <concordiacourseplanner@gmail.com>";
+const FROM_ADDRESS = "'Mr. osrs sir' <concordiacourseplanner@gmail.com>";
 const SUBJECT_HEADING = "OSRS GE Price Update";
 const TIME_OFFSET_HOURS = -4;
 
